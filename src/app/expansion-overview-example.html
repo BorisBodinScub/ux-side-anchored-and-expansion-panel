@@ -1,53 +1,80 @@
-<mat-accordion [displayMode]="'default'" [multi]="true">
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title> TITLE </mat-panel-title>
-    </mat-expansion-panel-header>
-    <p>
-      This is a summary of the contentThis is a summary of the contentThis is a
-      summary of the contentThis is a summary of the contentThis is a summary of
-      the contentThis is a summary of the contentThis is a summary of the
-      contentThis is a summary of the contentThis is a summary of the
-      contentThis is a summary of the content
-    </p>
-  </mat-expansion-panel>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" opened>
+    <a href="#panel1">Panel 1</a>
+    <a href="#panel2">Panel 2</a>
+    <a href="#panel3">Panel 3</a>
+    <a href="#panel4">Panel 4</a>
+    <a href="#panel5">Panel 5</a>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-accordion [displayMode]="'default'" [multi]="true">
+      <mat-expansion-panel id="panel1" [expanded]="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title> TITLE Panel 1 </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          This is a summary of the contentThis is a summary of the contentThis
+          is a summary of the contentThis is a summary of the contentThis is a
+          summary of the contentThis is a summary of the contentThis is a
+          summary of the contentThis is a summary of the contentThis is a
+          summary of the contentThis is a summary of the content summary of the
+          contentThis is a summary of the contentThis is a summary of the
+          contentThis is a summary of the contentThis is a summary of the
+          contentThis is a summary of the content
+        </p>
+      </mat-expansion-panel>
 
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title> TITLE </mat-panel-title>
-    </mat-expansion-panel-header>
-    <p>
-      This is a summary of the contentThis is a summary of the contentThis is a
-      summary of the contentThis is a summary of the contentThis is a summary of
-      the contentThis is a summary of the contentThis is a summary of the
-      contentThis is a summary of the contentThis is a summary of the
-      contentThis is a summary of the content
-    </p>
-  </mat-expansion-panel>
+      <mat-expansion-panel id="panel2" [expanded]="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title> TITLE Panel 2 </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          This is a summary of the contentThis is a summary of the contentThis
+          is a summary of the contentThis is a summary of the contentThis is a
+        </p>
+      </mat-expansion-panel>
 
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title> TITLE </mat-panel-title>
-    </mat-expansion-panel-header>
-    <p>
-      This is a summary of the contentThis is a summary of the contentThis is a
-      summary of the contentThis is a summary of the contentThis is a summary of
-      the contentThis is a summary of the contentThis is a summary of the
-      contentThis is a summary of the contentThis is a summary of the
-      contentThis is a summary of the content
-    </p>
-  </mat-expansion-panel>
+      <mat-expansion-panel id="panel3" [expanded]="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title> TITLE Panel 3 </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          This is a summary of the contentThis is a summary of the contentThis
+          is a summary of the contentThis is a summary of the contentThis is a
+          summary of the contentThis is a summary of the contentThis is a
+          summary of the contentThis is a summary of the contentThis is a
+          summary of the contentThis is a summary of the content
+        </p>
+      </mat-expansion-panel>
 
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title> TITLE </mat-panel-title>
-    </mat-expansion-panel-header>
-    <p>
-      This is a summary of the contentThis is a summary of the contentThis is a
-      summary of the contentThis is a summary of the contentThis is a summary of
-      the contentThis is a summary of the contentThis is a summary of the
-      contentThis is a summary of the contentThis is a summary of the
-      contentThis is a summary of the content
-    </p>
-  </mat-expansion-panel>
-</mat-accordion>
+      <mat-expansion-panel id="panel4" [expanded]="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title> TITLE Panel 4 </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          This is a summary of the contentThis is a summary of the contentThis
+          is a summary of the contentThis is a summary of the contentThis is a
+          summary of the contentThis is a summary of the contentThis is a
+          summary of the contentThis is a summary of the contentThis is a
+          summary of the contentThis is a summary of the content is a summary of
+          the contentThis is a summary of the contentThis is a summary of the
+          contentThis is a summary of the contentThis is a summary of the
+          contentThis is a summary of the contentThis is a summary of the
+          contentThis is a summary of the content
+        </p>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel id="panel5" [expanded]="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title> TITLE Panel 5 </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          This is a summary of the contentThis is a summary of the contentThis
+          is a summary of the contentThis is a summary of the contentThis is a
+          summary of the contentThis is a summary of the contentThis is a
+          summary of the contentThis is a summary of the content
+        </p>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-sidenav-content>
+</mat-sidenav-container>
