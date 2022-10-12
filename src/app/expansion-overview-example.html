@@ -1,4 +1,9 @@
-<mat-sidenav-container class="example-container">
+<div>
+  <button mat-stroked-button (click)="setExpanded(true)">Tout déplier</button>
+  <button mat-stroked-button (click)="setExpanded(false)">Tout replier</button>
+</div>
+
+<mat-sidenav-container>
   <mat-sidenav mode="side" opened>
     <a href="#panel1">Panel 1</a>
     <a href="#panel2">Panel 2</a>
@@ -8,7 +13,7 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-accordion [displayMode]="'default'" [multi]="true">
-      <mat-expansion-panel id="panel1" [expanded]="true">
+      <mat-expansion-panel id="panel1" [expanded]="isExpanded">
         <mat-expansion-panel-header>
           <mat-panel-title> TITLE Panel 1 </mat-panel-title>
         </mat-expansion-panel-header>
@@ -24,7 +29,7 @@
         </p>
       </mat-expansion-panel>
 
-      <mat-expansion-panel id="panel2" [expanded]="true">
+      <mat-expansion-panel id="panel2" [expanded]="isExpanded">
         <mat-expansion-panel-header>
           <mat-panel-title> TITLE Panel 2 </mat-panel-title>
         </mat-expansion-panel-header>
@@ -34,7 +39,7 @@
         </p>
       </mat-expansion-panel>
 
-      <mat-expansion-panel id="panel3" [expanded]="true">
+      <mat-expansion-panel id="panel3" [expanded]="isExpanded">
         <mat-expansion-panel-header>
           <mat-panel-title> TITLE Panel 3 </mat-panel-title>
         </mat-expansion-panel-header>
@@ -47,7 +52,7 @@
         </p>
       </mat-expansion-panel>
 
-      <mat-expansion-panel id="panel4" [expanded]="true">
+      <mat-expansion-panel id="panel4" [expanded]="isExpanded">
         <mat-expansion-panel-header>
           <mat-panel-title> TITLE Panel 4 </mat-panel-title>
         </mat-expansion-panel-header>
@@ -64,7 +69,7 @@
         </p>
       </mat-expansion-panel>
 
-      <mat-expansion-panel id="panel5" [expanded]="true">
+      <mat-expansion-panel id="panel5" [expanded]="isExpanded">
         <mat-expansion-panel-header>
           <mat-panel-title> TITLE Panel 5 </mat-panel-title>
         </mat-expansion-panel-header>

@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 /**
  * @title Basic expansion panel
@@ -9,9 +9,16 @@ import {Component} from '@angular/core';
   styleUrls: ['expansion-overview-example.css'],
 })
 export class ExpansionOverviewExample {
-  panelOpenState = false;
-}
+  public isExpanded: boolean | null  = true;
 
+  setExpanded(b: boolean) {
+    this.isExpanded = null;
+
+    setTimeout(() => {
+      this.isExpanded = b;
+    });
+  }
+}
 
 /**  Copyright 2022 Google LLC. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that
